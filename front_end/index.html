@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Car Parts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Best Car Parts</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Car Details Form -->
+        <section class="car-details">
+            <h2>Enter Your Car Details</h2>
+            <form id="car-details-form">
+                <label for="make">Make:</label>
+                <input type="text" id="make" name="make" required>
+
+                <label for="model">Model:</label>
+                <input type="text" id="model" name="model" required>
+
+                <label for="year">Year:</label>
+                <input type="number" id="year" name="year" required>
+
+                <button type="submit" class="continue-button">Continue</button>
+            </form>
+        </section>
+
+        <!-- Search and Browse Section -->
+        <section class="search-browse" style="display:none;">
+            <h2>What Would You Like to Do?</h2>
+            <button class="search-button">Search for a Part</button>
+            <button class="browse-button">Browse All Parts</button>
+        </section>
+
+        <!-- Browse Parts Section -->
+        <section class="parts-section" style="display:none;">
+            <h2>Available Parts</h2>
+            <div class="parts-category">
+                <h3>Engine Parts</h3>
+                <p>List of engine-related parts here...</p>
+            </div>
+            <div class="parts-category">
+                <h3>Transmission Parts</h3>
+                <p>List of transmission-related parts here...</p>
+            </div>
+            <div class="parts-category">
+                <h3>Brakes</h3>
+                <p>List of brake-related parts here...</p>
+            </div>
+            <!-- Add more categories as needed -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Best Car Parts | Designed by Sreeja</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
